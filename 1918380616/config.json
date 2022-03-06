@@ -1,0 +1,8 @@
+{
+  "default search": "Sketchy B&B Pathoma",
+  "default percent to box": 50,
+  "update default": false ,
+  "highlight color": "yellow",
+  "Shortcut of 'number of tags'": "Ctrl+t,n",
+  "Shortcut of 'and highlight'": "Ctrl+t,v"
+}

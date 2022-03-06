@@ -1,0 +1,18 @@
+{
+  "Background Color": "#2f2f31",
+  "Border Radius": 1,
+  "Foreground Color": "Navy",
+  "Dock Area": "bottom",
+  "Horizontal": true,
+  "IncludeNew": false,
+  "IncludeRev": true,
+  "IncludeLrn": true,
+  "IncludeNewAfterRevs": true,
+  "Invert": false,
+  "LimitToReviewSettings": true,
+  "ShowPercent": false,
+  "ShowNumber": false,
+  "Text Color": "aliceblue",
+  "MaxWidth": ""
+}
+  

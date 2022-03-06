@@ -1,0 +1,70 @@
+/** https://codepen.io/sosuke/pen/Pjoqqp **/
+:root {
+  --black: invert(0%) sepia(82%) saturate(7429%) hue-rotate(51deg)
+    brightness(85%) contrast(117%);
+  --white: invert(100%) sepia(0%) saturate(1681%) hue-rotate(312deg)
+    brightness(102%) contrast(102%);
+  --green: invert(49%) sepia(90%) saturate(408%) hue-rotate(71deg)
+    brightness(88%) contrast(91%);
+  --lime: invert(74%) sepia(60%) saturate(1880%) hue-rotate(40deg)
+    brightness(105%) contrast(107%);
+}
+
+.collapse-icon {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+
+  margin-right: 3px;
+
+  background-image: url("../icons/open.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  filter: var(--green);
+}
+
+.collapse-icon::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 22px;
+  left: -6px;
+  top: -2px;
+}
+
+.is-collapsed .collapse-icon {
+  background-image: url("../icons/closed.png");
+}
+
+.is-collapsed--empty .collapse-icon {
+  filter: var(--black);
+}
+
+.nightMode .collapse-icon {
+  filter: var(--lime);
+}
+
+.nightMode .is-collapsed--empty .collapse-icon {
+  filter: var(--white);
+}
+
+/** HIDE FIELD **/
+
+.is-collapsed .field {
+  /** visually hidden, still available for selections **/
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/** CLEAR FIELD **/
+
+.collapsible-clear-mode .fieldname {
+  cursor: no-drop;
+}

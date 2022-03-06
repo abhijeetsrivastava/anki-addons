@@ -1,0 +1,1 @@
+{"name": "Browser TableEditor side-by-side horizontal split", "mod": 1622134021, "config": {"shortcut": "ctrl+alt+8", "side-by-side is default": false, "toggle to vertical if editor narrower than": 300}, "disabled": false, "conflicts": [], "max_point_version": 45, "min_point_version": 22, "branch_index": 0, "update_enabled": true}

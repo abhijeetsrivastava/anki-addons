@@ -1,0 +1,48 @@
+.picmonic-marker {
+  background: inherit;
+  color: inherit;
+  position: relative;
+}
+
+.picmonic-embed-container {
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+.picmonic-inline-anchor {
+  padding-left: 8px;
+  width: 24px !important;
+  min-width: 24px !important;
+  max-width: 24px !important;
+  height: 22px !important;
+  min-height: 22px !important;
+  max-height: 22px !important;
+  display: inline !important;
+}
+
+@keyframes pls-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.pls-loading-icon {
+  display: inline-block;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+  margin: 16px;
+}
+
+.pls-loading-icon, .pls-loading-icon img {
+  width: 64px;
+  height: 64px;
+  border-radius: 64px;
+  line-height: 64px;
+}
+
+.pls-loading-icon img {
+  animation: pls-spin 1.2s infinite linear;
+  vertical-align: bottom;
+}

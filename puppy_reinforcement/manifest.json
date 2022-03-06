@@ -1,0 +1,12 @@
+{
+    "name": "Puppy Reinforcement",
+    "package": "puppy_reinforcement",
+    "ankiweb_id": "1722658993",
+    "author": "Glutanimate",
+    "version": "v1.0.0-beta.2",
+    "homepage": "https://github.com/glutanimate/puppy-reinforcement",
+    "conflicts": [
+        "1722658993"
+    ],
+    "mod": 1580886960
+}

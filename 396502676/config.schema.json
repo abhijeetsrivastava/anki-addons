@@ -1,0 +1,47 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Wrapper",
+  "properties": {
+    "buttons": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "properties": {
+          "action": {"type": "string"},
+          "visible": {"type": "boolean"},
+          "style": {
+            "type": "object",
+            "properties": {
+              "keys": {
+                "type": "string",
+                "pattern": "^((([Cc][Tt][Rr][Ll]|[Aa][Ll][Tt]|[Ss][Hh][Ii][Ff][Tt])\\+){0,3}([a-zA-Z0-9]|F[1-9]|F1[0-2]|space))?$",
+                "default": ""
+              },
+              "icon": { "type": "string", "default": "" },
+              "tip": { "type": "string", "default": "" },
+              "label": { "type": "string", "default": "" }
+            },
+            "additionalProperties": true
+          },
+          "css": {
+            "type": "object",
+            "additionalProperties": {
+              "anyOf": [
+                {"type": "object", "additionalProperties": true},
+                {"type": "string"},
+                {"type": "array", "items": {"type": "string"}}
+              ]
+            }
+          },
+          "beginWrap": {"type": "string"},
+          "endWrap": {"type": "string"}
+        },
+        "additionalProperties": false,
+        "required": ["action", "beginWrap", "endWrap"]
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": ["buttons"]
+}

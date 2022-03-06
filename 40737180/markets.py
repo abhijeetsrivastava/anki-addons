@@ -1,0 +1,17 @@
+markets = [
+    {"id": 100, "name": "Medicine (MD/DO)"},
+    {"id": 101, "name": "Registered Nurse (RN)"},
+    {"id": 202, "name": "Practical Nurse (LPN)"},
+    {"id": 203, "name": "Nurse Practitioner (NP)"},
+    {"id": 105, "name": "Physician Assistant (PA)"},
+    {"id": 109, "name": "Pharmacist (PHARM.D)"},
+    {"id": 116, "name": "Occupational Therapist (OT)"},
+    {"id": 115, "name": "Physical Therapist (PT)"},
+    {"id": 117, "name": "Medical Assistant (MA)"},
+    {"id": 204, "name": "Certified Nursing Assistant (CNA)"},
+    {"id": 118, "name": "Patient Care Technician (PCT)"},
+    {"id": 120, "name": "Medical Lab Technician (MLT)"},
+    {"id": 121, "name": "General Allied Health (GAH)"},
+    {"id": 113, "name": "Paramedic"},
+    {"id": 113, "name": "Pre-Health"},
+]

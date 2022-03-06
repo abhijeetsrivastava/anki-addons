@@ -1,0 +1,68 @@
+{
+  "buttons": {
+    "justify": {
+      "action": "wrap",
+      "style": {
+        "icon": "left_justify.png",
+        "tip": "Justify text and center it"
+      },
+      "css": {
+        "leftalign": {
+          "display": "inline-block",
+          "text-align": "left"
+        },
+        "centeredbox": {
+            "text-align": "center"
+        }
+      },
+      "beginWrap": "<div class=\"centeredbox\"><div class=\"leftalign\">",
+      "endWrap": "</div></div>"
+    },
+    "endCloze": {
+      "visible": false,
+      "action": "moveEnd",
+      "style": {
+        "keys": "ctrl+shift+space"
+      },
+      "beginWrap": "{{c[0-9]::",
+      "endWrap": "}} ?"
+    },
+    "endClozeInside": {
+      "visible": false,
+      "action": "moveEndInside",
+      "style": {
+        "keys": "ctrl+space"
+      },
+      "beginWrap": "{{c[0-9]::",
+      "endWrap": "}}"
+    },
+    "beginCloze": {
+      "visible": false,
+      "action": "moveBegin",
+      "style": {
+        "keys": "ctrl+alt+shift+space"
+      },
+      "beginWrap": "{{c[0-9]::",
+      "endWrap": "}}"
+    },
+    "beginClozeInside": {
+      "visible": false,
+      "action": "moveBeginInside",
+      "style": {
+        "keys": "ctrl+alt+space"
+      },
+      "beginWrap": "{{c[0-9]::",
+      "endWrap": "}}"
+    },
+    "uncloze": {
+      "action": "unwrap",
+      "style": {
+        "keys": "ctrl+alt+u",
+        "icon": "uncloze.png",
+        "tip": "Uncloze"
+      },
+      "beginWrap": "{{c[0-9]::",
+      "endWrap": "}}"
+    }
+  }
+}
